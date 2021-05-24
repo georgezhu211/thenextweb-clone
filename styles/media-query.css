@@ -1,0 +1,48 @@
+/* ======================================
+ 
+    MediaQuery-Reporter Styles
+ 
+========================================= */
+body:after {
+  content: "less than 320";
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 2em;
+  font-weight: bold;
+  width: 100%;
+  position: fixed;
+  bottom: 60px;
+  background-color: hsl(0, 100%, 50%, 0.7);
+  text-align: center;
+  padding: 20px 0px;
+  color: #fff;
+}
+@media only screen and (min-width: 320px) {
+  body:after {
+    content: 'Portrait: 320 to 480';
+    background-color: hsl(147, 50%, 47%, 0.7);
+  }
+}
+@media only screen and (min-width: 480px) {
+  body:after {
+    content: 'Landscape: 480 to 768';
+    background-color: hsl(39, 100%, 50%, 0.7);
+  }
+}
+@media only screen and (min-width: 768px) {
+  body:after {
+    content: 'Tablets: 768 to 1024';
+    background-color: hsl(240, 100%, 50%, 0.7);
+  }
+}
+@media only screen and (min-width: 1024px) {
+  body:after {
+    content: 'Netbooks: 1024 to 1680';
+    background-color: hsl(300, 76%, 72%, 0.7);
+  }
+}
+@media only screen and (min-width: 1680px) {
+  body:after {
+    content: 'Desktops: 1680 and up';
+    background-color: hsl(248, 53%, 58%, 0.7);
+  }
+}

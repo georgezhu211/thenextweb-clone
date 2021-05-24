@@ -1,0 +1,6 @@
+/* wrapper */
+.wrapper {
+  background-color: hsl(240, 60%, 40%, 0.9);
+  border: 1px solid black;
+  height: 100vh;
+}
